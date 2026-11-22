@@ -49,6 +49,21 @@ irm https://raw.githubusercontent.com/qpzmas/siokhfd/main/install.ps1 | iex
 > 只需要 Node.js ≥ 16。没有依赖、没有安装包、没有 `node_modules`。
 > 终端要支持真彩色（Windows Terminal、iTerm2、Kitty、WezTerm、VS Code 终端都可以）。
 
+## 装不上？
+
+安装脚本会自己换路：先试 `raw.githubusercontent.com`，不行再试 `cdn.jsdelivr.net`，
+最后退到 `api.github.com`——哪个能通就用哪个，不用你管。
+
+如果连 `npx` 都拉不下来，就直接拿单个文件跑（这条路走 GitHub API，通常最稳）：
+
+```bash
+curl -fsSL -H "Accept: application/vnd.github.raw" \
+  https://api.github.com/repos/qpzmas/siokhfd/contents/fatfish.mjs -o fatfish.mjs
+node fatfish.mjs
+```
+
+就一个文件，34 KB，删掉就等于卸载干净了。
+
 ## 怎么玩
 
 | 按键 | 干什么 |

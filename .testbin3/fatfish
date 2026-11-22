@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec node "C:\Users\jxgm\Documents\deepseek-harness\default-workspace\siokhfd\.testbin3/fatfish.mjs" "$@"
