@@ -1,4 +1,5 @@
 node_modules/
 .preview/
+.testbin*/
 *.log
 .DS_Store
