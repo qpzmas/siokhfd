@@ -1,0 +1,39 @@
+{
+  "name": "siokhfd",
+  "version": "1.0.0",
+  "description": "🐟 大肥鱼 fatfish — 一条住在你终端里的鱼。零依赖、真彩色、可以喂。",
+  "type": "module",
+  "bin": {
+    "fatfish": "fatfish.mjs",
+    "siokhfd": "fatfish.mjs"
+  },
+  "files": [
+    "fatfish.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node fatfish.mjs",
+    "preview": "node tools/build-preview.mjs"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "tui",
+    "aquarium",
+    "ascii-art",
+    "pixel-art",
+    "truecolor",
+    "zero-dependency",
+    "fish"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qpzmas/siokhfd.git"
+  },
+  "homepage": "https://github.com/qpzmas/siokhfd#readme"
+}
